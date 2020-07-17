@@ -1,0 +1,264 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C15AA30C-4D94-40AE-AC8F-F5AE73F1FD42}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vikas_high_school</RootNamespace>
+    <AssemblyName>Vikas high school</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44392</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\Awards\A1.jpg" />
+    <Content Include="Asset\Awards\A10.jpg" />
+    <Content Include="Asset\Awards\A11.jpg" />
+    <Content Include="Asset\Awards\A12.jpg" />
+    <Content Include="Asset\Awards\A13.jpg" />
+    <Content Include="Asset\Awards\A14.jpg" />
+    <Content Include="Asset\Awards\A15.jpg" />
+    <Content Include="Asset\Awards\A16.jpg" />
+    <Content Include="Asset\Awards\A17.jpg" />
+    <Content Include="Asset\Awards\A18.jpg" />
+    <Content Include="Asset\Awards\A19.jpg" />
+    <Content Include="Asset\Awards\A2.jpg" />
+    <Content Include="Asset\Awards\A3.jpg" />
+    <Content Include="Asset\Awards\A5.jpg" />
+    <Content Include="Asset\Awards\A6.jpg" />
+    <Content Include="Asset\Awards\A7.jpg" />
+    <Content Include="Asset\Awards\A8.jpg" />
+    <Content Include="Asset\Awards\A9.jpg" />
+    <Content Include="Asset\Awards\Award1.jpg" />
+    <Content Include="Asset\Awards\Award2.jpg" />
+    <Content Include="Asset\Awards\Award3.jpg" />
+    <Content Include="Asset\Awards\Award4.jpg" />
+    <Content Include="Asset\Awards\Award5.jpg" />
+    <Content Include="Asset\Bharat ko jano\WhatsApp Image 2019-08-08 at 5.56.49 PM.jpeg" />
+    <Content Include="Asset\Bharat ko jano\WhatsApp Image 2019-08-08 at 5.56.53 PM.jpeg" />
+    <Content Include="Asset\Bharat ko jano\WhatsApp Image 2019-08-08 at 5.57.54 PM.jpeg" />
+    <Content Include="Asset\Calligrapy Competition\WhatsApp Image 2019-05-04 at 2.09.12 PM %281%29.jpeg" />
+    <Content Include="Asset\Calligrapy Competition\WhatsApp Image 2019-05-04 at 2.09.12 PM %284%29.jpeg" />
+    <Content Include="Asset\Calligrapy Competition\WhatsApp Image 2019-11-28 at 2.03.18 PM.jpeg" />
+    <Content Include="Asset\Drawing competition\WhatsApp Image 2019-04-27 at 11.02.02 AM.jpeg" />
+    <Content Include="Asset\Drawing competition\WhatsApp Image 2019-04-29 at 9.30.39 PM.jpeg" />
+    <Content Include="Asset\Drawing competition\WhatsApp Image 2019-04-29 at 9.30.42 PM.jpeg" />
+    <Content Include="Asset\Drawing competition\WhatsApp Image 2019-04-29 at 9.30.49 PM.jpeg" />
+    <Content Include="Asset\Drawing competition\WhatsApp Image 2019-05-04 at 2.08.12 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.31.39 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.32.21 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.33.15 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.33.35 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.34.02 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.34.37 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.34.57 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.35.02 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.35.03 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.35.10 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.35.18 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.35.20 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.35.54 PM.jpeg" />
+    <Content Include="Asset\Environment day\WhatsApp Image 2019-08-16 at 1.45.11 PM.jpeg" />
+    <Content Include="Asset\Gallery\G-1.jpg" />
+    <Content Include="Asset\Gallery\G-10.jpg" />
+    <Content Include="Asset\Gallery\G-11.jpg" />
+    <Content Include="Asset\Gallery\G-12.jpg" />
+    <Content Include="Asset\Gallery\G-13.jpg" />
+    <Content Include="Asset\Gallery\G-14.jpg" />
+    <Content Include="Asset\Gallery\G-15.jpg" />
+    <Content Include="Asset\Gallery\G-16.jpg" />
+    <Content Include="Asset\Gallery\G-17.jpg" />
+    <Content Include="Asset\Gallery\G-18.jpg" />
+    <Content Include="Asset\Gallery\G-19.jpg" />
+    <Content Include="Asset\Gallery\G-2.jpg" />
+    <Content Include="Asset\Gallery\G-20.jpg" />
+    <Content Include="Asset\Gallery\G-21.jpg" />
+    <Content Include="Asset\Gallery\G-3.jpg" />
+    <Content Include="Asset\Gallery\G-4.jpg" />
+    <Content Include="Asset\Gallery\G-5.jpg" />
+    <Content Include="Asset\Gallery\G-6.jpg" />
+    <Content Include="Asset\Gallery\G-7.jpg" />
+    <Content Include="Asset\Gallery\G-8.jpg" />
+    <Content Include="Asset\Gallery\G-9.jpg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 1.42.29 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.15.09 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.15.12 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.15.22 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.16.41 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.23.34 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.23.35 PM %281%29.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.23.35 PM.jpeg" />
+    <Content Include="Asset\Games\WhatsApp Image 2020-01-25 at 12.23.36 PM.jpeg" />
+    <Content Include="Asset\Homepage\award-tag.png" />
+    <Content Include="Asset\Homepage\award.png" />
+    <Content Include="Asset\Homepage\Background img.jpg" />
+    <Content Include="Asset\Homepage\Background img1.jpg" />
+    <Content Include="Asset\Homepage\Background img3.jpg" />
+    <Content Include="Asset\Homepage\backround img2.jpg" />
+    <Content Include="Asset\Homepage\Cancer Day 2019.jpg" />
+    <Content Include="Asset\Homepage\Group 1.png" />
+    <Content Include="Asset\Homepage\home page building 2.jpg" />
+    <Content Include="Asset\Homepage\home page building.jpg" />
+    <Content Include="Asset\Homepage\main school bg croped.jpg" />
+    <Content Include="Asset\Homepage\main school bg.jpg" />
+    <Content Include="Asset\Homepage\school name with logo png file croped.png" />
+    <Content Include="Asset\Homepage\school name with logo png file.png" />
+    <Content Include="Asset\Homepage\school name with logo.jpg" />
+    <Content Include="Asset\Homepage\teachers day home page j.jpg" />
+    <Content Include="Asset\Homepage\vhs home page game.jpg" />
+    <Content Include="Asset\Homepage\vhs home page tree day.jpg" />
+    <Content Include="Asset\Offer\three_information_analytics-512.png" />
+    <Content Include="Asset\PTM\WhatsApp Image 2019-12-07 at 2.43.53 PM.jpeg" />
+    <Content Include="Asset\PTM\WhatsApp Image 2019-12-07 at 2.44.05 PM.jpeg" />
+    <Content Include="Asset\PTM\WhatsApp Image 2019-12-07 at 2.44.07 PM.jpeg" />
+    <Content Include="Asset\PTM\WhatsApp Image 2020-01-05 at 1.52.13 PM.jpeg" />
+    <Content Include="Asset\PTM\WhatsApp Image 2020-01-05 at 11.35.50 AM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.46.51 PM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.46.56 PM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.46.57 PM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.46.59 PM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.47.01 PM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.47.02 PM.jpeg" />
+    <Content Include="Asset\Quiz competition\WhatsApp Image 2019-11-30 at 2.47.33 PM.jpeg" />
+    <Content Include="Asset\Social\Social-bg.jpg" />
+    <Content Include="Asset\Summer vacations\WhatsApp Image 2019-05-29 at 2.49.56 PM.jpeg" />
+    <Content Include="Asset\Summer vacations\WhatsApp Image 2019-05-30 at 1.18.04 PM.jpeg" />
+    <Content Include="Asset\Summer vacations\WhatsApp Image 2019-05-30 at 1.18.05 PM.jpeg" />
+    <Content Include="Asset\Teacher%27s day\WhatsApp Image 2019-09-05 at 10.01.13 AM.jpeg" />
+    <Content Include="Asset\Teacher%27s day\WhatsApp Image 2019-09-05 at 10.26.25 AM.jpeg" />
+    <Content Include="Asset\Teacher%27s day\WhatsApp Image 2019-09-05 at 12.13.45 PM.jpeg" />
+    <Content Include="Asset\Teacher%27s day\WhatsApp Image 2019-09-06 at 11.48.51 AM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-16 at 3.21.35 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-16 at 3.21.37 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.43.11 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.43.13 PM %281%29.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.43.13 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.43.14 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.44.00 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.44.50 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.48.13 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 1.52.45 PM.jpeg" />
+    <Content Include="Asset\Waste material competition\WhatsApp Image 2019-05-20 at 3.36.03 PM.jpeg" />
+    <Content Include="css\about.css" />
+    <Content Include="css\FeeStructure.css" />
+    <Content Include="css\RegistrationForm.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\uniform.css" />
+    <Content Include="index.aspx" />
+    <Content Include="Javascript\script.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60729</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

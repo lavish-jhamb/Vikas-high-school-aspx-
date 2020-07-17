@@ -1,0 +1,574 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Vikas_high_school.index" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas high school</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- fb integration (javascript SDK)-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0&appId=246353209924725&autoLogAppEvents=1" nonce="zxEda3lh"></script>
+
+    <!-- ################## HOMEPAGE ###################### -->
+    <section>
+        <div class="login-panel">
+            <div class="">
+                <a href="#" class="login"><i class="fas fa-user"></i>Login</a>
+            </div>
+            <div class="wiggle-effect">
+                <a href="#" data-toggle="modal" data-target="#admissions" class="register">Apply for admissions</a>
+            </div>
+        </div>
+        <!-- ############## NAVABAR ############### -->
+        <div class="nav-logo">
+            <a class="navbar-brand" id="logo-2" href="#">
+                <img src="/Asset/Homepage/school name with logo png file croped.png" alt="logo-2">
+            </a>
+            <div class="login-panel-2">
+                <div class="">
+                    <a href="#" class="login-2"><i class="fas fa-user"></i>Login</a>
+                </div>
+                <div class="wiggle-effect">
+                    <a href="#" data-toggle="modal" data-target="#admissions" class="register-2">Apply for admissions</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="logo" href="#">
+                <img src="/Asset/Homepage/school name with logo png file croped.png"
+                    alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navigations">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Why</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Admission
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="RegistrationForm.html">Registration</a>
+                            <a class="dropdown-item" href="FeeStructure.html">Fee Structure</a>
+                            <a class="dropdown-item" href="uniform.html">Uniform</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Academics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Curriculam</a>
+                            <a class="dropdown-item" href="#">Houses</a>
+                            <a class="dropdown-item" href="#">Clubs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Downloads
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Prospectus</a>
+                            <a class="dropdown-item" href="#">Book list</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Gallery
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Award Gallery</a>
+                            <a class="dropdown-item" href="#">Image Gallery</a>
+                            <a class="dropdown-item" href="#">Video Gallery</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- MODAL POPUP CONTENT (APPLY FOR ADMISSIONS) -->
+    <div class="modal fade" id="admissions">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-white" id="offer-header">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section class="admissions">
+                        <div class="offer-title">
+                            <h2>|| Super offers ||</h2>
+                        </div>
+                        <div class="offer-container">
+                            <div class="offer-card">
+                                <div class="top-bg"></div>
+                                <div class="offer-content">
+                                    <h4>Same Blood Less Expense</h4>
+                                    <a href="#" class="term&conditions" data-toggle="modal" data-target="#term&conditions"><small>Know more</small></a>
+                                    <div class="offer-img-container">
+                                        <img src="/Asset/Offer/three_information_analytics-512.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <div class="offer-footer">
+                        <a href="#" class="modal-apply-btn">Click here to apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERM & CONDITIONS POPUP -->
+    <div class="modal fade" id="term&conditions">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-white">
+                    <h3 class="modal-title">Term & Conditions</h3>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="term&conditions-title">
+                        <h3 class="text-center mb-2">Term & Conditions</h3>
+                    </div>
+                    <div class="term&conditions-content">
+                        <ol class="p-3">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquid!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquid!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquid!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquid!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ######################### HOMEPAGE SLIDER ########################### -->
+    <section id="slider">
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="mycarousel" data-slide-to="1"></li>
+                <li data-target="mycarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active" id="slider-bg">
+                    <div class="carousel-content">
+                        <h2>Vikas High School</h2>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2" id="slider-bg">
+                    <div class="carousel-content">
+                        <h2>Childrens</h2>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3" id="slider-bg">
+                    <div class="carousel-content">
+                        <h2>Staff</h2>
+                    </div>
+                </div>
+
+                <!-- ############### controls ################## -->
+                <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <!--######################## NEWS CONTROL ######################## -->
+            <div class="news-control">
+                <ul>
+                    <marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()" direction="up"
+                        scrollamount="7">
+            <li><a href="#">Some text</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tenetur?</p>
+            </li>
+            <li><a href="#">Some text</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tenetur?</p>
+            </li>
+            <li><a href="#">Some text</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tenetur?</p>
+            </li>
+            <li><a href="#">Some text</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tenetur?</p>
+            </li>
+            <li><a href="#">Some text</a>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, tenetur?</p>
+            </li>
+          </marquee>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############################ STATS ############################## -->
+    <section class="statics">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <article class="stat statics-1 d-flex justify-content-center">
+                        <div class="stat-icon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="stat-text align-self-center">
+                            +500 Students
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <article class="stat statics-2 d-flex justify-content-center">
+                        <div class="stat-icon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="stat-text align-self-center">
+                            +500 Students
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <article class="stat statics-3 d-flex justify-content-center">
+                        <div class="stat-icon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="stat-text align-self-center">
+                            +500 Students
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ####################### WELCOME SECTION ####################### -->
+    <section class="awards">
+        <div class="container">
+            <div class="content">
+                <h2>Welcome to the Vikas High School</h2>
+                <span class="underline"></span>
+                <p>
+                    The Vikas high School is a co-educational, day boarding-cum-residential school. Established under
+          the aegis of the Sharda Devi Charitable Trust - it is a non- profit institution, & a tribute to the
+          memory of our respected matriarch. The school is spread over a verdant & picturesque campus of 40
+          acres in an unpolluted, inspiring & happy environment. The wired campus comprises of 2.5 lac square
+          feet built-up area & offers the best in terms of facilities required to enhance learning outcomes.
+          The activities in school orbit around upholding its core values of "Nurturing individuals towards
+          excellence in a happy, value based & progressive learning community."
+                </p>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-8" id="blue-box">
+                    <h3>|| FROM THE SOUL COMES VALOUR. FROM KNOWLEDGE COMES IMMORTALITY ||</h3>
+                    <p>
+                        At The vikas high School, we believe in harnessing the inborn potential of every child and
+            empowering him with knowledge. And if there is joy in learning and happiness in gaining
+            knowledge, it will remain with the soul forever.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4" id="carousel-text">
+                    <div class="award-img-container" class="col-lg-2">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-box">
+                        <div id="award-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" id="award-inner">
+                                <div class="carousel-item active" id="award-content">
+                                    <h4>some text</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis necessitatibus accusamus nam
+                    sequi, voluptates corporis Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, optio..
+                                    </p>
+                                </div>
+                                <div class="carousel-item" id="award-content">
+                                    <h4>some text</h4>
+                                </div>
+                                <div class="carousel-item" id="award-content">
+                                    <h4>some text</h4>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#award-carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#award-carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ############## GALLERY ################# -->
+
+    <section class="gallery">
+        <div class="row" id="gallery-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <h5 class="prize-title">AWARD GALLERY</h5>
+                <div class="prize-section">
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/Award1.jpg">
+                            <img src="/Asset/Awards/Award1.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/Award2.jpg">
+                            <img src="/Asset/Awards/Award2.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/Award3.jpg">
+                            <img src="/Asset/Awards/Award3.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/Award4.jpg">
+                            <img src="/Asset/Awards/Award4.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/Award5.jpg">
+                            <img src="/Asset/Awards/Award5.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/A1.jpg">
+                            <img src="/Asset/Awards/A1.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/A2.jpg">
+                            <img src="/Asset/Awards/A2.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="prize-container">
+                        <a href="/Asset/Awards/A3.jpg">
+                            <img src="/Asset/Awards/A3.jpg" alt="award-img"></a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h5 class="video-title">VIDEO GALLERY</h5>
+                <div class="video-section">
+                    <article class="video-container">
+                        <iframe width="100%" height="" src="https://www.youtube.com/embed/pF4ZeDXXs80" frameborder="0"
+                            allowfullscreen></iframe>
+                    </article>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h5 class="photo-title">PHOTO GALLERY</h5>
+                <div class="photo-section">
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-6.jpg">
+                            <img src="/Asset/Gallery/G-6.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-7.jpg">
+                            <img src="/Asset/Gallery/G-7.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-8.jpg">
+                            <img src="/Asset/Gallery/G-8.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-9.jpg">
+                            <img src="/Asset/Gallery/G-9.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-10.jpg">
+                            <img src="/Asset/Gallery/G-10.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-11.jpg">
+                            <img src="/Asset/Gallery/G-11.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-12.jpg">
+                            <img src="/Asset/Gallery/G-12.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-13.jpg">
+                            <img src="/Asset/Gallery/G-13.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-14.jpg">
+                            <img src="/Asset/Gallery/G-14.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-20.jpg">
+                            <img src="/Asset/Gallery/G-20.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-19.jpg">
+                            <img src="/Asset/Gallery/G-19.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-17.jpg">
+                            <img src="/Asset/Gallery/G-17.jpg" alt="award-img"></a>
+                    </article>
+                    <article class="photo-container">
+                        <a href="/Asset/Gallery/G-18.jpg">
+                            <img src="/Asset/Gallery/G-18.jpg" alt="award-img"></a>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <h6 class="view-more-items"><a href="#">View more</a></h6>
+    </section>
+
+
+    <!-- #################### ABOUT SECTION ########################## -->
+    <section class="about">
+        <div class="container">
+            <div class="row" id="about-center">
+                <div class="col-12 col-md-5 col-lg-5 about-content">
+                    <h1>About VHS</h1>
+                    <h3>vikas high school</h3>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolorem itaque. Modi
+            consectetur deleniti, fugiat impedit exercitationem magni, adipisci, deserunt !
+                    </p>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolorem itaque. Modi
+            consectetur deleniti, fugiat impedit exercitationem magni, adipisci, deserunt!
+                    </p>
+                    <a href="#" class="about-btn">Read More</a>
+                </div>
+                <div class=" col-12 col-md-5 col-lg-6 iframe-container">
+                    <!-- <iframe width="100%" src="https://www.youtube.com/embed/pF4ZeDXXs80" frameborder="0" allowfullscreen></iframe> -->
+                    <div class=" about-img">
+                        <img src="/Asset/Games/WhatsApp Image 2020-01-25 at 12.15.09 PM.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ########## INTEGRATED SOCIAL PLATFORMS ############## -->
+    <section class="social">
+        <h2 class="social-title">Social</h2>
+        <div class="social-container">
+            <div class="fb-feed">
+                <div class="fb-page" data-href="https://www.facebook.com/vikashighschoolrajgarhbhiwani/?ref=search&amp;__tn__=%2Cd%2CP-R&amp;eid=ARBXq0HBnxQPfDa1YkxY5-77fExEbrwzhuc-BaF6QzdQgll3S1MEKAxWakjSg-qV9EgxPR-eUzSaZziu" data-tabs="timeline" data-width="380" data-height="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/vikashighschoolrajgarhbhiwani/?ref=search&amp;__tn__=%2Cd%2CP-R&amp;eid=ARBXq0HBnxQPfDa1YkxY5-77fExEbrwzhuc-BaF6QzdQgll3S1MEKAxWakjSg-qV9EgxPR-eUzSaZziu" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/vikashighschoolrajgarhbhiwani/?ref=search&amp;__tn__=%2Cd%2CP-R&amp;eid=ARBXq0HBnxQPfDa1YkxY5-77fExEbrwzhuc-BaF6QzdQgll3S1MEKAxWakjSg-qV9EgxPR-eUzSaZziu">Vikas High School, Rajgarh Bhiwani</a></blockquote>
+                </div>
+                <div class="fb-buttons">
+                    <div class="fb-like" data-href="https://www.facebook.com/vikashighschoolrajgarhbhiwani/" data-width=""
+                        data-layout="button_count" data-action="like" data-size="large" data-share="true">
+                    </div>
+                </div>
+            </div>
+            <div class="twitter-feed">
+                <a class="twitter-timeline" data-width="380" data-height="500" data-theme="dark"
+                    href="https://twitter.com/vhsrajgarh?ref_src=twsrc%5Etfw">Tweets by vhsrajgarh</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="twitter-buttons">
+                    <a href="https://twitter.com/vhsrajgarh?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+                        data-show-screen-name="false" data-show-count="false">Follow @vhsrajgarh</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://twitter.com/intent/tweet?screen_name=vhsrajgarh&ref_src=twsrc%5Etfw"
+                        class="twitter-mention-button" data-size="large" data-related="" data-show-screen-name="false"
+                        data-show-count="false">Tweet to @vhsrajgarh</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ####################### FOOTER SECTION ############################ -->
+    <footer class="footer">
+        <div class="footer-center">
+            <div class="footer-social">
+                <h4>Stay updated :</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h4>|| Quick-links ||</h4>
+                <ul>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Gallery</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Downloads</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Academics</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Admission</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Home</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>|| Contact us ||</h4>
+                <ul>
+                    <li><i class="fas fa-school"></i></i>Vikas high school,rajgarh</li>
+                    <li><i class="fas fa-phone"></i></i>Ph.: 01664-297008</li>
+                    <li><i class="fas fa-envelope"></i></i>Email: vikashighschoolrajgarh@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>Copyright&copy; <span id="year">2020 </span>VIKAS HIGH SCHOOL. All right Reserved</p>
+        </div>
+    </footer>
+
+    <!-- ############ BACK TO TOP LINK ################ -->
+    <a href="#logo-2" class="back-to-top-link"><i class="fas fa-level-up-alt"></i></a>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/Javascript/script.js"></script>
+</body>
+
+</html>
